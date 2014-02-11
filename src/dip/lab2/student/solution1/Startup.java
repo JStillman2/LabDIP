@@ -19,12 +19,18 @@ import javax.swing.JOptionPane;
  * @author your name goes here
  */
 public class Startup {
- 
+
  
     public static void main(String[] args) {
         
+        TipCalculator a = new FoodServiceTipCalculator(ServiceQuality.GOOD ,120.96);
+        TipService service = new TipService(a);
+        TipCalculator b = new BaggageServiceTipCalculator(ServiceQuality.FAIR, 6);
+        TipService baggage = new TipService(b);
         
         
+        System.out.println("Server gets: " + a.getTip());
+        System.out.println("Bagger gets: "+ b.getTip());
         
     }
 
