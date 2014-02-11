@@ -4,12 +4,15 @@
  * and open the template in the editor.
  */
 
-package dip.lab2;
+package dip.lab2.student.solution1;
 
 /**
  *
- * @author Jay
+ * @author Nicole
  */
-public enum ServiceQuality {
-    GOOD, FAIR, POOR
+public interface TipCalculator {
+    
+    public abstract double getTip();
+    
+    
 }
