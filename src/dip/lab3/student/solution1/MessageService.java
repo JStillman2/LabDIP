@@ -12,7 +12,21 @@ package dip.lab3.student.solution1;
  */
 public class MessageService {
     
-    private String message;
+    private InputMessage input;
+    private OutputMessage output;
+
+    public MessageService(InputMessage input, OutputMessage output) {
+        this.input = input;
+        this.output = output;
+    }
+    
+    public void provideMessage(){
+        output.getOutput(input);
+        
+    }
+    
+    
+    
     
     
     

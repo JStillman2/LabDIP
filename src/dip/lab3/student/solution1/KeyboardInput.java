@@ -15,12 +15,11 @@ import java.util.*;
 public class KeyboardInput implements InputMessage {
     
     
-   @Override
-   public String getInput(){
+      public void getInput(){
        Scanner keyboard = new Scanner(System.in);
        System.out.println("What is your message?");
        String message = keyboard.nextLine();
-       return message;
+//       return message;
        
    }
 //       public static void main(String[] args) {

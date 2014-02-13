@@ -6,15 +6,19 @@
 
 package dip.lab3.student.solution1;
 
+import java.awt.Component;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jstillman2
  */
 public class GuiOutput implements OutputMessage {
     
-    @Override
-    public String getOutput(){
-        
+    
+     public void getOutput(InputMessage message) {
+       Message mg = message.getInput();
+       JOptionPane.showMessageDialog(null, mg.getStringMessage());
     }
     
 }

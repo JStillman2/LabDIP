@@ -12,6 +12,8 @@ package dip.lab3.student.solution1;
  */
 public class ConsoleOutput implements OutputMessage{
     
-    
+    public void getOutput(InputMessage message){
+        System.out.println(message);
+    }
     
 }

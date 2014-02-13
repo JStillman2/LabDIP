@@ -9,10 +9,9 @@ import javax.swing.JOptionPane;
 public class GuiInput implements InputMessage{
     
     
-    @Override
-    public String getInput(){
+      public void getInput(){
        String message =  JOptionPane.showInputDialog("What is your message?");
-       return message;
+//       return message;
        
     }
 //        public static void main(String[] args) {

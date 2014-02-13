@@ -12,7 +12,7 @@ package dip.lab3.student.solution1;
  */
 public interface InputMessage {
     
-    public abstract String getInput();
+    public abstract void getInput();
     
     
 }

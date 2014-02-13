@@ -5,14 +5,14 @@
  */
 
 package dip.lab3.student.solution1;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author jstillman2
  */
 public interface OutputMessage {
     
-    public abstract String getOutput();
+    public abstract void getOutput(InputMessage message);
     
     
 }
