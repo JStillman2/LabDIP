@@ -42,8 +42,8 @@ public class FoodServiceTipCalculator implements TipCalculator {
     }
 
 
-    public final void setServiceRating(ServiceQuality q) {
-        // No need to validate because enums provide type safety!
+    public void setServiceRating(ServiceQuality q) {
+        
         serviceQuality = q;
     }
 
