@@ -29,8 +29,8 @@ public class Startup {
         TipService baggage = new TipService(b);
         
         
-        System.out.println("Server gets: " + a.getTip());
-        System.out.println("Bagger gets: "+ b.getTip());
+        System.out.println("The tip is: " + a.getTip());
+        System.out.println("The tip is: "+ b.getTip());
         
     }
 

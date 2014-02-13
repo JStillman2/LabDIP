@@ -1,12 +1,8 @@
 package dip.lab2;
 
 /**
- * An example low-level class. Does this class definition follow the DIP?
- * If not, fix it.
  *
- * Any other best practice violations? Fix them too.
- *
- * @author your name goes here
+ * @author jstillman2
  */
 public class BaggageServiceTipCalculator implements TipCalculator{
 
@@ -19,15 +15,15 @@ public class BaggageServiceTipCalculator implements TipCalculator{
     private ServiceQuality serviceQuality;
 
     public BaggageServiceTipCalculator(ServiceQuality q, int bags) {
-        this.setServiceQuality(q); // perform validation
+        this.setServiceQuality(q); 
         this.setBagCount(bags);
 
-        baseTipPerBag = 1.00; // set default value
+        baseTipPerBag = 1.00; 
     }
 
     @Override
     public double getTip() {
-        double tip = 0.00; // always initialize local variables
+        double tip = 0.00; 
 
         switch(serviceQuality) {
             case GOOD:
