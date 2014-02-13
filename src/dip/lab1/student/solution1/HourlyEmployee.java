@@ -13,11 +13,7 @@ public class HourlyEmployee implements Employee {
     
 
 
-    /**
-     * Convenience constructor. Is this the best way to go?
-     * @param hourlyRate - the rate per hour that the employee is paid
-     * @param totalHrsForYear - total hours worked or predicted per year
-     */
+   
     public HourlyEmployee(double hourlyRate, double totalHrsForYear) {
         setHourlyRate(hourlyRate);
         setTotalHrsForYear(totalHrsForYear);
